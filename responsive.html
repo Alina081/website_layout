@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We are responsible</title>
+    <style>
+        .menu-container {
+            display: flex;
+            /* flex-wrap: wrap; */
+        }
+
+        .food {
+            border: 3px solid burlywood;
+            width: 300px;
+            /* margin: 10px; */
+        }
+
+        .food img {
+            width: 75%;
+        }
+
+
+        @media (max-width: 700px) {
+            .food {
+                background-color: orange;
+                margin-bottom: 20px;
+                width: 80%;
+                margin: 3px;
+            }
+
+            .menu-container {
+                flex-direction: column;
+                flex-wrap: wrap;
+            }
+        }
+
+
+        /* @media (min-width:700px) and (max-width:900px) {
+            .food {
+                background-color: yellow;
+            }
+        } [ screen টা কেমন দেখাবে তা বলে দিবে। browser বড় করলে কেমন দেখাবে ছোট করলে কেমন দেখাবে তা বলে দিবে। এখানে browser এর width   min 700px হলে background color yellow দেখাবে। max এর টাও সেইম। ] */
+
+
+        @media (min-width:700px) and (max-width:900px) {
+            .food {
+                background-color: yellow;
+                margin-bottom: 5%;
+            }
+
+            /* .menu-container [এর ভিতর flex-direction: column; টা দিয়ে দিলে যখন browser টা ছোট করব তখন column গুলো  নিচে নিচে দেখাবে] */
+
+            .menu-container {
+                flex-direction: column;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .food {
+                background-color: palegoldenrod;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- .menu-container>.food*8>img[src="images/healthy.jpg"]+h2{price: $@100}+p>lorem50+br+button{Order Now} -->
+
+    <div class="menu-container">
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 100</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore vero tempore asperiores, dolor
+                doloribus sunt labore animi perferendis iste autem aperiam. Blanditiis ipsum, nobis recusandae
+                necessitatibus alias distinctio reprehenderit quibusdam odit autem, fugiat amet quos eligendi! Pariatur
+                soluta recusandae debitis fuga assumenda dolore nulla quod, quo odit in tenetur omnis!<br><button>Order
+                    Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 101</h2>
+            <p>Nobis quas perferendis aut? Voluptatibus velit libero quibusdam asperiores maxime officiis architecto,
+                nesciunt odit a exercitationem iste voluptas. Ullam modi exercitationem, tempora asperiores at vitae
+                neque hic provident numquam, libero velit excepturi cum veritatis minus nesciunt atque blanditiis nobis
+                quas harum laboriosam dolorum? Incidunt rem at ad quo laudantium similique.<br><button>Order
+                    Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 102</h2>
+            <p>Voluptates velit quis, impedit eos illo harum maiores ea numquam quidem? Quidem impedit deserunt id
+                exercitationem dolore tenetur maxime repudiandae dolor, et aliquam. Maxime accusamus, odit eius, optio
+                ratione suscipit repudiandae ullam enim numquam tempore dolore, dolorum ex? Minus iure voluptates quo
+                totam quibusdam similique dolore reprehenderit officia iusto quam!<br><button>Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 103</h2>
+            <p>Nesciunt expedita quaerat eum ut debitis, voluptate assumenda nostrum at facere, rem quisquam. Velit ut
+                animi distinctio adipisci magni nesciunt laborum odio sit atque culpa, odit non fugit beatae minus ab
+                sint id doloribus perspiciatis. Incidunt reiciendis aut consequuntur vel minus dolorem accusamus magni
+                placeat! Deserunt culpa nulla repudiandae officia!<br><button>Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 104</h2>
+            <p>Repudiandae nam voluptas eveniet voluptatibus odio quod soluta impedit consectetur, minima a accusamus
+                atque vero eum recusandae unde officiis aliquid sint? Architecto quod quam nesciunt consectetur commodi
+                iste eius facilis explicabo id saepe soluta accusamus neque quisquam, qui modi non molestias asperiores
+                molestiae laudantium est ipsum! Voluptas laboriosam ullam sed.<br><button>Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 105</h2>
+            <p>Quibusdam vero eligendi consequatur repellendus fugiat? Architecto, inventore qui? Sit fugiat, eius vel
+                consectetur accusamus rem minima! Tempora dolor quasi at dicta maiores eos, asperiores aliquid itaque
+                blanditiis iste eligendi iusto officia, reiciendis vel, numquam illo. Eos sequi inventore dignissimos
+                praesentium ut provident exercitationem in facilis, eius nihil alias consectetur!<br><button>Order
+                    Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 106</h2>
+            <p>Modi alias quo consectetur! Voluptate adipisci nisi a maxime suscipit. Expedita voluptatum explicabo
+                atque deleniti similique animi praesentium veniam accusamus et, est, velit minima aperiam id. Amet
+                quaerat vel deserunt eos vero nemo libero eius quidem voluptatem. Nostrum nihil recusandae delectus
+                adipisci molestiae, quae ullam fugiat id maiores aliquid. Ratione.<br><button>Order Now</button></p>
+        </div>
+        <div class="food">
+            <img src="images/healthy.jpg" alt="">
+            <h2>price: 107</h2>
+            <p>Iure quam exercitationem eligendi culpa, architecto dolores ipsum saepe, aperiam quae pariatur, ducimus
+                ipsa sint quod cum fuga voluptatum? Est iusto, numquam tenetur possimus unde ratione dicta. Commodi
+                temporibus ab, sunt et minus accusamus eos laboriosam vero, maiores dignissimos, numquam voluptates!
+                Aspernatur deserunt ratione veritatis illum velit sit reprehenderit a!<br><button>Order Now</button></p>
+        </div>
+    </div>
+</body>
+
+</html>
